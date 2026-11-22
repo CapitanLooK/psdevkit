@@ -1,0 +1,25 @@
+# Editor / OS
+.idea/
+*.swp
+*~
+.DS_Store
+
+# Local build leftovers if a project is mounted here
+**/build/
+**/out/
+*.elf
+*.exe
+*.bin
+*.cue
+*.iso
+*.o
+*.a
+*.map
+*.irx
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+compile_commands.json
+.ninja_deps
+.ninja_log
+build.ninja

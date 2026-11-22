@@ -1,0 +1,25 @@
+x-common: &common
+  user: "${UID:-1000}:${GID:-1000}"
+  working_dir: /workspace
+  volumes:
+    - ./:/workspace
+  stdin_open: true
+  tty: true
+
+services:
+  ps1:
+    <<: *common
+    build:
+      context: .
+      dockerfile: docker/ps1/Dockerfile
+    image: psdevkit-ps1:local
+    command: ["/bin/bash"]
+
+  ps2:
+    <<: *common
+    build:
+      context: .
+      dockerfile: docker/ps2/Dockerfile
+    image: psdevkit-ps2:local
+    user: "0:0"
+    command: ["/bin/bash"]

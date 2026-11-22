@@ -1,0 +1,25 @@
+{
+  "name": "PS2 — ps2dev",
+  "dockerComposeFile": ["../../docker-compose.yml"],
+  "service": "ps2",
+  "workspaceFolder": "/workspace",
+  "shutdownAction": "stopCompose",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-vscode.cpptools",
+        "ms-vscode.makefile-tools"
+      ],
+      "settings": {
+        "C_Cpp.default.compilerPath": "/usr/local/ps2dev/ee/bin/mips64r5900el-ps2-elf-gcc",
+        "C_Cpp.default.intelliSenseMode": "linux-gcc-x64",
+        "C_Cpp.default.includePath": [
+          "/usr/local/ps2dev/ee/include",
+          "/usr/local/ps2dev/ps2sdk/ee/include",
+          "/usr/local/ps2dev/ps2sdk/common/include",
+          "${workspaceFolder}/**"
+        ]
+      }
+    }
+  }
+}

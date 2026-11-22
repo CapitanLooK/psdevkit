@@ -1,0 +1,30 @@
+{
+  "configurations": [
+    {
+      "name": "PS1 (PSn00bSDK)",
+      "includePath": [
+        "${workspaceFolder}/**",
+        "/opt/psn00bsdk/include",
+        "/opt/psn00bsdk/lib/libpsn00b/include"
+      ],
+      "defines": [],
+      "compilerPath": "/opt/psn00bsdk/bin/mipsel-none-elf-gcc",
+      "cStandard": "c11",
+      "intelliSenseMode": "linux-gcc-x64"
+    },
+    {
+      "name": "PS2 (ps2sdk)",
+      "includePath": [
+        "${workspaceFolder}/**",
+        "/usr/local/ps2dev/ee/include",
+        "/usr/local/ps2dev/ps2sdk/ee/include",
+        "/usr/local/ps2dev/ps2sdk/common/include"
+      ],
+      "defines": [],
+      "compilerPath": "/usr/local/ps2dev/ee/bin/mips64r5900el-ps2-elf-gcc",
+      "cStandard": "c11",
+      "intelliSenseMode": "linux-gcc-x64"
+    }
+  ],
+  "version": 4
+}

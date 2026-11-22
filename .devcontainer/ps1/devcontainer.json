@@ -1,0 +1,26 @@
+{
+  "name": "PS1 — PSn00bSDK",
+  "dockerComposeFile": ["../../docker-compose.yml"],
+  "service": "ps1",
+  "workspaceFolder": "/workspace",
+  "shutdownAction": "stopCompose",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-vscode.cpptools",
+        "ms-vscode.cmake-tools",
+        "twxs.cmake"
+      ],
+      "settings": {
+        "C_Cpp.default.compilerPath": "/opt/psn00bsdk/bin/mipsel-none-elf-gcc",
+        "C_Cpp.default.intelliSenseMode": "linux-gcc-x64",
+        "C_Cpp.default.includePath": [
+          "/opt/psn00bsdk/include",
+          "/opt/psn00bsdk/lib/libpsn00b/include",
+          "${workspaceFolder}/**"
+        ],
+        "cmake.configureOnOpen": false
+      }
+    }
+  }
+}
